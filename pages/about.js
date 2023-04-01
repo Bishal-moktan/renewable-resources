@@ -1,4 +1,5 @@
 import AboutLanding from '@/components/AboutLanding/AboutLanding';
+import Head from 'next/head';
 
 const About = () => {
   return (
