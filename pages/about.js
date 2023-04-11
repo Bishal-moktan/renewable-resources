@@ -1,4 +1,6 @@
-import AboutLanding from '@/components/AboutLanding/AboutLanding';
+import AboutContent from '@/components/AboutPage/AboutContent/AboutContent';
+import AboutLanding from '@/components/AboutPage/AboutLanding/AboutLanding';
+import Team from '@/components/AboutPage/Team/Team';
 import Head from 'next/head';
 
 const About = () => {
@@ -11,6 +13,8 @@ const About = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <AboutLanding />
+      <AboutContent />
+      <Team />
     </div>
   );
 };

@@ -7,18 +7,37 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import styles from './Navbar.module.css';
+import useGlobalContext from '@/hooks/useGlobalContext';
 
 function NavScrollExample() {
   const [mounted, setMounted] = useState(false);
+  const [activeLink, setActiveLink] = useState(0);
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  // const { activeLink } = useGlobalContext();
+
+  const links = [
+    {
+      name: 'Home',
+      path: '/',
+    },
+    {
+      name: 'About Us',
+      path: '/about',
+    },
+    {
+      name: 'Contact',
+      path: '/contact',
+    },
+  ];
   return (
     <>
       {mounted && (
         <Navbar expand="lg" fixed="top" className={styles.navbar}>
           <Container>
-            <Navbar.Brand className={styles.link}>
+            <Navbar.Brand className={styles.logo}>
               Renewable Resources
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
@@ -30,16 +49,21 @@ function NavScrollExample() {
               ></Nav>
               <Form className="d-flex">
                 <Nav>
-                  <Nav.Link>
-                    <Link className={styles.link} href={'/'}>
-                      Home
-                    </Link>
-                  </Nav.Link>
-                  <Nav.Link>
-                    <Link className={styles.link} href={'/about'}>
-                      About
-                    </Link>
-                  </Nav.Link>
+                  {links.map((link, index) => {
+                    return (
+                      <Nav.Link key={index}>
+                        <Link
+                          className={`${styles.link} ${
+                            activeLink === index ? styles.active : null
+                          }`}
+                          href={link.path}
+                          onClick={() => setActiveLink(index)}
+                        >
+                          {link.name}
+                        </Link>
+                      </Nav.Link>
+                    );
+                  })}
                 </Nav>
               </Form>
             </Navbar.Collapse>

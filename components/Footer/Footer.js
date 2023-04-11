@@ -57,6 +57,12 @@ const CustomFooter = () => {
               About
             </Link>
           </div>
+          <div className={styles.linkContainer}>
+            <BsFillTelephoneFill />
+            <Link className={styles.link} href={'/contact'}>
+              Contact
+            </Link>
+          </div>
         </div>
         <div className={styles.recent}>
           <h3>Recent Work</h3>
