@@ -9,17 +9,17 @@ const CardSection = () => {
     {
       title: 'Save Our Forest',
       icon: service1,
-      desc: 'Some quick example text to build on the card title and make up the bulk of the card.',
+      desc: 'Save trees, and they’ll bear fruits for future generations.',
     },
     {
       title: 'Save Our Water',
       icon: service2,
-      desc: 'Some quick example text to build on the card title and make up the bulk of the card.',
+      desc: 'Understand your responsibility of saving water so that you can be blessed with later.',
     },
     {
       title: 'Recycle',
       icon: service3,
-      desc: 'Some quick example text to build on the card title and make up the bulk of the card.',
+      desc: 'Reuse, recycle, and reduce the waste for a better future',
     },
   ];
   return (

@@ -17,10 +17,10 @@ const ContactForm = () => {
           <div className="item">
             <h5>BEFORE CONTACTING US</h5>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
-              labore nobis debitis illum similique natus hic explicabo sed
-              veniam nulla cum illo saepe laboriosam reiciendis eligendi qui
-              provident culpa aspernatur, impedit voluptatum in. Ducimus?
+              If you are experiencing technical issues, please try the following
+              troubleshooting steps: Refresh the page and clear your cache and
+              cookies Try using a different browser or device Check your
+              internet connection
             </p>
           </div>
           <div className="item">

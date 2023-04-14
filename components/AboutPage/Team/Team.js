@@ -12,21 +12,21 @@ const Team = () => {
       img: jeniffer,
       name: 'Jennifer Smith',
       role: 'Founder',
-      info: 'Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum.',
+      info: 'Jennifer Smith is an environmental activist, writer, and the founder of the Intersectional Environmentalist platform, which aims to promote diversity, equity, and inclusion in the environmental movement. She is known for her advocacy work on environmental and social justice issues, particularly the intersection of race and the environment.',
     },
     {
       id: 2,
       img: john,
       name: 'John Doe',
       role: 'GENERAL MANAGER',
-      info: 'Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum.',
+      info: 'John Doe is an American environmental activist, author, and adventurer who is known for his advocacy work on sustainability and conservation. He has been involved in various environmental campaigns and initiatives, including promoting sustainable agriculture.',
     },
     {
       id: 3,
       img: amely,
       name: 'Amely Chan',
       role: 'HUMAN RELATION',
-      info: 'Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum.',
+      info: 'Amley Chan is an environmental advocate, video producer, and travel blogger who is known for her work on sustainability and green living. She promotes eco-friendly lifestyle choices through her blog, "Travel Lushes," and her social media channels.',
     },
   ];
   return (
@@ -35,7 +35,7 @@ const Team = () => {
       <div className={styles.cards}>
         {content.map((card) => {
           return (
-            <article key={card.id}>
+            <article key={card.id} className={styles.card}>
               <div className={styles.card_img}>
                 <Image src={card.img} />
               </div>

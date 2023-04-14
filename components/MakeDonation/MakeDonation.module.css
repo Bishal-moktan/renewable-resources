@@ -1,7 +1,6 @@
 .container {
   background: url('../../public/images/donation-bg.jpg');
-  padding-top: 90px;
-  padding-bottom: 65px;
+  padding: 90px 5% 45px;
   background-position: center -35.5472px;
   display: flex;
   justify-content: space-evenly;
@@ -14,7 +13,7 @@
   padding: 2rem;
   color: var(--color-white);
   border-radius: var(--radius);
-  width: 30rem;
+  /* width: 30rem; */
 }
 
 .card:nth-child(1) {
@@ -88,10 +87,5 @@
 @media (max-width: 700px) {
   .container {
     flex-direction: column;
-  }
-
-  .card {
-    width: 25rem;
-    margin: 0 auto;
   }
 }

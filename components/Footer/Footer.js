@@ -21,8 +21,9 @@ const CustomFooter = () => {
           {/*  to be changed to logo */}
           <h1>Renewable resources</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sed
-            illum nostrum adipisci nemo aut.
+            Renewable resources are natural resources that can be replenished or
+            restored naturally over time, such as solar, wind, hydro,
+            geothermal, and biomass energy.
           </p>
         </div>
         <div className={styles.contact}>
